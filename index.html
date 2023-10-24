@@ -3,11 +3,12 @@
 
     <head>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="assets/style.css"/>
         <title>Sebastian Saenz's Portfolio</title>
     </head>
 
     <body>
-            <nav>
+            <div class="header">
                 <!--Add profile picture, name as main title, and list with contents of page-->
                 <div>
                     <!--iamge-->
@@ -15,7 +16,7 @@
 
                 <h1>Sebastian Saenz</h1>
 
-                <div>
+                <div class="links">
                     <ul>
                         <li>
                             <a href="#about-me">About me</a>
@@ -32,58 +33,60 @@
                     </ul>
                 </div>
 
-            </nav>
-            
-            <header>
-                <!--This is going to be the about me section-->
-                <div id="about-me" class="section-titles">
-                    <h3>About me</h3>
-                </div>
+            </div>
 
-                <div class="about-me">
+            <br>
+            <br>
+            
+            <div id="about-me">
+                <!--This is going to be the about me section-->
+                <h3>About me</h3>
+                <div class="aboutInfo">
                     <p>
                         a little bit about me
                     </p>
                 </div>
-            </header>
+            </div>
 
-            <main>
+                <br>
+                <br>
+                <br>
+            
                 <!--This area will contain the images and links to finished work -->
-                <div id="projects" class="section-titles">
+                <div id="projects" class="projects" >
                     <h3>Projects</h3>
+                
+                    <div>
+                        <!-- make sure the first image has a specific ID for special editing-->
+                    </div>
+                    <div id="resume">
+                        <!--Figure out how to make Resume image appear when button on nav bar is clicked-->
+                    </div>
                 </div>
 
-                <div class="projects">
-                    <!-- make sure the first image has a specific ID for special editing-->
-                </div>
+                <br>
+                <br>
+                <br>
 
-                <!--Figure out how to make Resume image appear when button on nav bar is clicked-->
-
-            </main>
-
-            <footer>
                 <!-- This area will contain all contact information-->
-                <div id="contact-me" class="section-titles">
-                    <h3>
-                        Contact Me
-                    </h3>
-                </div>
+                <div id="contact-me" class="contact-me">
+                    <h3>Contact Me</h3>
 
-                <div class="contact-me">
-                    <ul>
-                        <li>
-                            <a href="phone-number">Phone Number</a>
-                        </li>
-                        <li>
-                            <a href="email">Email</a>
-                        </li>
-                        <li>
-                            <a href="github">Github</a>
-                        </li>
-                    </ul>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="phone-number">Phone Number</a>
+                            </li>
+                            <li>
+                                <a href="email">Email</a>
+                            </li>
+                            <li>
+                                <a href="github">Github</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
-            </footer>
+            </div>
 
     </body>
 
