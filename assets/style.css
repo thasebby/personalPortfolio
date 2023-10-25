@@ -6,6 +6,9 @@
 
 :root{
     --textColor: #E6B453;
+    --listBackgrounds: #647691;
+    --titleFamily: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --linkFamily: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body{
@@ -14,8 +17,8 @@ body{
 
 .header{
     padding:20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #647691;
+    font-family: var(--titleFamily);
+    background-color: var(--listBackgrounds);
     color: var(--textColor);
 }
 
@@ -28,7 +31,7 @@ body{
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--linkFamily);
     font-size: 20px;
 }
 
@@ -36,6 +39,11 @@ body{
     display: inline-block;
     margin-left: 25px;
     list-style-type: none;
+    color: var(--textColor);
+}
+
+#footer{
+    visibility: hidden;
 }
 
 a{
@@ -48,9 +56,77 @@ p{
 }
 
 h3{
-    font-size: 50px;
+    font-size: 40px;
 }
 
+main{
+    display:block;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.about-me{
+    flex:1 0 200px;
+    padding: 10px;
+    text-align:left;
+}
+
+.about-me .aboutTitle{
+    color: var(--textColor);
+    font-family: var(--titleFamily);
+    float:left;
+}
+
+.about-me .aboutInfo{
+    float:right;
+    margin-left: 300px;
+    font-family: var(--linkFamily);
+    color: #666158;
+    padding: 20px;
+
+}
+
+.projects{
+   flex:1 0 200px;
+   padding:10px;
+   text-align: left;
+}
+
+.projects .projectsTitle{
+    color: var(--textColor);
+    font-family: var(--titleFamily) ;
+}
+
+.footer{
+    padding:20px;
+    font-family: var(--titleFamily);
+    background-color: var(--listBackgrounds);
+    color: var(--textColor);
+}
+
+.footer h3{
+    display:inline-block
+}
+
+.footer .contactMeInfo{
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: var(--linkFamily);
+    font-size: 20px;
+}
+
+.footer .contactMeInfo ul li{
+    display: inline-block;
+    margin-left: 25px;
+    list-style-type: none;
+    color: var(--textColor);
+}
+
+
+
+
+/*
 #about-me .aboutInfo p{
     margin-right: 20px;
     float:right;
@@ -64,12 +140,28 @@ div .projects h3{
     margin-left:25px;
 }
 
-.contact-me ul li{
-    padding-top: 15px;
-    margin-right: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size:30px;
-    display:inline-block;
-    margin-left: 25px;
+.contact-me{
+    padding:20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    background-color: var(--listBackgrounds);
+    color: var(--textColor);
 }
 
+.contact-me h1{
+    display:inline-block;
+}
+
+.contact-me .cLinks{
+    margin-right: 20px;
+    float:right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.contact-me .cLinks ul li{
+    display: inline-block;
+    margin-left: 25px;
+    color: var(--textColor);
+}
+
+*/
