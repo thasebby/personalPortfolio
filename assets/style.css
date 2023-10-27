@@ -25,6 +25,7 @@ body{
 .header h1{
     display: inline-block;
     font-size: 50px;
+    padding-left: 11%;
 }
 
 .header .links{
@@ -42,8 +43,17 @@ body{
     color: var(--textColor);
 }
 
-#footer{
-    visibility: hidden;
+.profile{
+    flex:0 1 auto;
+    display: inline-block;
+    position:flex;
+}
+
+.profile img{
+    display: flex;
+     border-radius: 80px;
+     max-width: 20%;
+     max-height: 15%;
 }
 
 a{
@@ -57,6 +67,11 @@ p{
 
 h3{
     font-size: 40px;
+    color: var(--textColor);
+    font-family: var(--titleFamily) ;
+    padding-right: 50px;
+    border-right: solid;
+    float: left;
 }
 
 main{
@@ -67,13 +82,11 @@ main{
 
 .about-me{
     flex:1 0 200px;
-    padding: 10px;
+    padding: 5px;
     text-align:left;
 }
 
 .about-me .aboutTitle{
-    color: var(--textColor);
-    font-family: var(--titleFamily);
     float:left;
 }
 
@@ -89,27 +102,50 @@ main{
 .projects{
    flex:1 0 200px;
    padding:10px;
-   text-align: left;
+   width: 100%;
 }
 
-.projects .projectsTitle{
-    color: var(--textColor);
-    font-family: var(--titleFamily) ;
+.cards{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    position:center;
+}
+
+.card{
+    width:200px;
+    margin:10px;
+    position: relative;
+}
+
+.card img{
+    max-width:100%;
+    position: relative;
+}
+
+.cardOne{
+    width:100%;
+
+}
+
+.card:nth-child(1){
+    width:400px;
 }
 
 .footer{
-    padding:20px;
+    padding:50px;
     font-family: var(--titleFamily);
     background-color: var(--listBackgrounds);
     color: var(--textColor);
 }
 
 .footer h3{
-    display:inline-block
+    display:inline-block;
+    margin: 0%;
 }
 
 .footer .contactMeInfo{
-    padding-top: 15px;
+    padding-top: 10px;
     margin-right: 20px;
     float: right;
     font-family: var(--linkFamily);
