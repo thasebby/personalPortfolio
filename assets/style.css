@@ -4,6 +4,7 @@
     margin:0;
 }
 
+/* sets the colors and fonts that are going to be used the most*/
 :root{
     --textColor: #E6B453;
     --listBackgrounds: #647691;
@@ -56,10 +57,34 @@ body{
      max-height: 15%;
 }
 
+/*this is the filler image between the head and the body*/
+.placeHolder{
+    height:300px;
+    width:100%;
+    margin-bottom: 25px;
+    background-image: url("./images/placeHolder.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 a{
     color: var(--textColor);
     text-decoration: none;
 }
+
+/*setting the grow speeds for the transitions*/
+.grow{
+   -webkit-transition: color 1s, font-size 1s;
+   transition: color 1s, font-size 1s;
+}
+
+/*makes the links in head grow slightly and changes the font color to white
+when they are hovered over*/
+.grow:hover{
+    font-size: 23px;
+    color: white;
+}
+
 
 p{
     font-size: 20px;
@@ -80,6 +105,7 @@ main{
     margin-top: 2%;
 }
 
+/*styling the about me*/
 .about-me{
     flex:1 0 200px;
     padding: 5px;
@@ -91,8 +117,7 @@ main{
 }
 
 .about-me .aboutInfo{
-    float:right;
-    margin-left: 300px;
+    margin-left: 250px;
     font-family: var(--linkFamily);
     color: #666158;
     padding: 20px;
@@ -105,6 +130,7 @@ main{
    width: 100%;
 }
 
+/*the cards are the project images with the working links*/
 .cards{
     display:flex;
     flex-wrap: wrap;
@@ -113,25 +139,24 @@ main{
 }
 
 .card{
-    width:200px;
+    flex:20%;
     margin:10px;
     position: relative;
 }
 
 .card img{
-    max-width:100%;
+    width:100%;
+    height: 100%;
     position: relative;
 }
 
 .cardOne{
-    width:100%;
+    flex:100%;
+    max-height: 300px;
 
 }
 
-.card:nth-child(1){
-    width:400px;
-}
-
+/*the footer section contains the contact me area*/
 .footer{
     padding:50px;
     font-family: var(--titleFamily);
@@ -158,7 +183,8 @@ main{
     list-style-type: none;
     color: var(--textColor);
 }
-
+/*this tooltip shows my phone number when the user hovers over the 
+phone number link*/
 .tooltip{
     position: relative;
     display: inline-block;
@@ -184,46 +210,3 @@ main{
 }
 
 
-
-
-
-
-/*
-#about-me .aboutInfo p{
-    margin-right: 20px;
-    float:right;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-}
-
-
-div .projects h3{
-    display: inline-block;
-    margin-left:25px;
-}
-
-.contact-me{
-    padding:20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    background-color: var(--listBackgrounds);
-    color: var(--textColor);
-}
-
-.contact-me h1{
-    display:inline-block;
-}
-
-.contact-me .cLinks{
-    margin-right: 20px;
-    float:right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-.contact-me .cLinks ul li{
-    display: inline-block;
-    margin-left: 25px;
-    color: var(--textColor);
-}
-
-*/
